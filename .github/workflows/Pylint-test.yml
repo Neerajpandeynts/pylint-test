@@ -16,4 +16,4 @@ jobs:
             if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: analyzing with python
       run: |
-            pylint-fail-under --fail_under 8.0 **/*.py
+            pylint-fail-under --fail_under 8.0 *.py
