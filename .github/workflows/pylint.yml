@@ -21,5 +21,5 @@ jobs:
         pip install pylint-fail-under 
     - name: Analysing the code with pylint
       run: |
-            pylint --fail-under=8.0 `ls -R|grep .py$|xargs`
+            pylint --fail-under=4.0 `ls -R|grep .py$|xargs`
         
