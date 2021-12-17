@@ -1,6 +1,6 @@
 name: Pylint
 
-on: [pull_request]
+on: [push,pull_request]
 
 jobs:
   build:
@@ -18,6 +18,8 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install pylint
+        pip install pylint-fail-under 
     - name: Analysing the code with pylint
       run: |
-        pylint `ls -R|grep .py$|xargs`
+        pylint-fail-under --fail_under 8.0 `ls -R|grep .py$|xargs
+        
