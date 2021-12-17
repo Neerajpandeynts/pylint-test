@@ -15,5 +15,5 @@ jobs:
             if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: analyzing with python
       run: |
-            pylint **/*.py
+            pylint first_file.py
              
