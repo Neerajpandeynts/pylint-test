@@ -152,8 +152,7 @@ disable=print-statement,
         xreadlines-attribute,
         deprecated-sys-function,
         exception-escape,
-        comprehension-escape,
-        unused-argument
+        comprehension-escape
 
 
 
