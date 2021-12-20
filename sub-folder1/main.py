@@ -1,7 +1,7 @@
 """
 This script is responsible to get asset Details from the Qualys API for NCA account
 """
-def lambda_handler(event,context):
+def lambda_handler():
     """
     step 1: Get the JWT Token
     step 2: call the asset API and get all the asset details
