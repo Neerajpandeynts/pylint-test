@@ -13,7 +13,7 @@ if __name__ == '__main__':
                         help='path to directory you want to run pylint | '
                              'Default: %(default)s | '
                              'Type: %(type)s ',
-                        default='./cyber-loging',
+                        default='./sub-folder2',
                         type=str)
 
     parser.add_argument('-t',
