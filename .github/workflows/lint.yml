@@ -19,4 +19,4 @@ jobs:
         pip install pylint
     - name: Run Pylint
       run: |
-        python lint.py --path ./sub-folder1 --threshold 2
+        python3 lint.py --path ./sub-folder1 --threshold 2
