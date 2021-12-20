@@ -1,6 +1,6 @@
 import argparse
 import logging
-from pylint import lint
+from pylint.lint import Run
 
 if __name__ == '__main__':
 
@@ -32,7 +32,7 @@ if __name__ == '__main__':
                  'Path: {} | '
                  'Threshold: {} '.format(path, threshold))
 
-    results = lint.Run([path], do_exit=False)
+    results = Run([path], do_exit=False)
 
     final_score = results.linter.stats['global_note']
 
